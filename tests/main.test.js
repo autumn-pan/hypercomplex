@@ -18,7 +18,7 @@ test('Vector3', () => {
     
     expect(v1.add(v2)).toEqual(new Vector3(5, 7, 9));
     expect(v1.subtract(v2)).toEqual(new Vector3(-3, -3, -3));
-    expect(v1.multiply(v2)).toEqual(new Vector3(4, 10, 18));
+    expect(v1.dot(v2)).toEqual(32);
 }
 );
 
