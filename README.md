@@ -65,7 +65,7 @@ console.log(quat1.subtract(quat2)
 // Quaternion {q0: -3, q1: -1, q2: 1, q3: 3}
 
 ```
-```
+
 ### Unary Operations
 ```js
 let quat1 = new Quaternion(q0: 1,q1: 2,q2: 3,q3: 4);
