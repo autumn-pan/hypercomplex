@@ -21,13 +21,13 @@ let complex2 = new Complex(3,4)
 console.log(complex1.add(complex2));
 // Complex: {real: 4, imag: 6}
 
-console.log(complex1.sub(complex2));
+console.log(complex1.subract(complex2));
 // Complex: {real: -2, imag: -2}
 
-console.log(complex1.mult(complex2));
+console.log(complex1.multiply(complex2));
 // Complex: {real: -5, imag: 10}
 
-console.log(complex1.div(complex2));
+console.log(complex1.divide(complex2));
 // Complex: {real: 0.44, imag: 0.08}
 ```
 ### Unary Operations
@@ -50,13 +50,21 @@ console.log(complex1.phase();
 let Quaternion = new Quaternion(0,1,2,3)
 //The first argument represents the scalar component, while the last three represent the vector components <q1,q2,q3>
 ```
-### Product
+### Binary Operations
 ```js
 let quat1 = new Quaternion(1,2,3,4);
 let quat2 = new Quaternion(4,3,2,1)
 
 console.log(quat1.product(quat2));
 // Quaternion {q0: -12, q1: 6, q2: 24, q3: 12}
+
+console.log(quat1.add(quat2));
+// Quaternion {q0: 5, q1: 5, q2: 5, q3: 5}
+
+console.log(quat1.subtract(quat2)
+// Quaternion {q0: -3, q1: -1, q2: 1, q3: 3}
+
+```
 ```
 ### Unary Operations
 ```js
@@ -81,6 +89,20 @@ The Vector3 class is a class that represents 3-dimensional vectors. Their primar
 ### Initialization
 ```js
 let vector = new Vector3(1,1,1)
+```
+### Binary Operations
+```js
+let vec1 = new Vector(1,2,3)
+let vec2 = new Vector(4,5,6)
+
+console.log(vec1.add(vec2))
+// Vector: {x: 5, y: 7, z: 9}
+
+console.log(vec1.subtract(vec2))
+// Vector: {x: -3, y: -3, z: -3}
+
+console.log(vec1.dot(vec2))
+// 32
 ```
 ### Quaternion Rotation
 ```js
