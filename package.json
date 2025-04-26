@@ -1,11 +1,11 @@
 {
   "name": "hypercomplex",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "keywords": [
     "complex",
     "hypercomplex",
     "quaternion",
-    "math"
+    "mathematics"
   ],
   "description": "https://github.com/autumn-pan/hypercomplex",
   "main": "index.js",
