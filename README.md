@@ -91,8 +91,8 @@ let vector = new Vector3(1,1,1)
 ```
 ### Binary Operations
 ```js
-let vec1 = new Vector(1,2,3)
-let vec2 = new Vector(4,5,6)
+let vec1 = new Vector3(1,2,3)
+let vec2 = new Vector3(4,5,6)
 
 console.log(vec1.add(vec2))
 // Vector: {x: 5, y: 7, z: 9}
